@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+    * {
+        font-family: "Noto Sans", sans-serif !important;
+    }
+
+    ul {
+        list-style-type: none;
+        padding-left: 0px;
+        /* border: 2px solid green; */
+        display: flex;
+        justify-content: space-around;
+        gap: 50px;
+    }
+
+    header {
+        /* border: 3px solid red; */
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        color: black;
+        margin-top: 20px;
+    }
+
+    .logo {
+        width: 140px;
+        height: 70px;
+        border-radius: 10px;
+        margin-left: -30px
+    }
+
+    .line {
+        text-decoration: none;
+        color: black;
+    }
+
+    .lis {
+        font-family: "Noto Sans", sans-serif !important;
+        font-size: 20px;
+
+    }
+
+    #first {
+        width: 100%;
+        height: 500px;
+        margin-top: 15px;
+        text-align: center;
+        border: 1px solid white;
+        background-image: url("https://rapido-app-assets.storage.googleapis.com/66e1052cdca1e68cc52d070e8c9631aa_1736774712641.png");
+    }
+
+    #third {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .input {
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        width: 600px;
+        height: 75px;
+        border-radius: 10px;
+        margin-top: 20px;
+        background-color: white;
+    }
+
+    input {
+        width: 100%;
+        height: 100%;
+        border-radius: 8px;
+        border: 0.5px solid rgb(178, 178, 178);
+        background: white;
+        box-sizing: border-box;
+        padding-left: 20px;
+        font-size: 15px;
+
+    }
+
+    #btn {
+        height: 75px;
+        width: 600px;
+        margin-top: 20px;
+        background-color: rgb(255, 202, 32);
+        padding: 1rem;
+        color: rgb(0, 0, 0);
+        font-weight: 600;
+        border: none;
+        cursor: pointer;
+        font-size: 30px;
+        text-align: center;
+    }
+
+    h1 {
+        margin-top: 50px;
+        font-size: 50px;
+        text-align: center;
+    }
+
+    #total {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    #body {
+        display: flex;
+        flex-direction: column;
+        margin-left: 150px;
+    }
+
+    #our {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        font-weight: 50px;
+        font-size: 30px;
+        color: #333;
+    }
+
+    .under {
+        background: #FFCA20;
+        width: 85px;
+        height: 3px;
+        margin-top: -25px;
+        margin-bottom: 50px;
+    }
+
+    #images {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            gap: 30px;
+    }
+
+    img {
+        width: 150px;
+        height: 100px;
+    }
+
+    .name {
+        font-size: 25px;
+        margin-left: 16px;
+        font-weight: 550;
+    }
+
+    .s {
+        background-color: rgb(246, 247, 249);
+    }
+
+    .c {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+
+    }
+
+    .cd,
+    .card {
+        margin-top: 50px;
+    }
+
+    .im {
+        width: 500px;
+        height: 100%;
+    }
+
+    .cd {
+
+        width: 500px;
+        margin-right: 20px;
+    }
+
+    .get {
+        font-size: 50px;
+    }
+
+    .matter {
+        font-size: 40px;
+        font-family: "Noto Sans", sans-serif !important;
+        font-weight: 400px;
+        padding: 20px 0px;
+        text-align: left;
+    }
+
+    .btn2 {
+        width: 200px;
+        height: 60px;
+        background-color: black;
+        color: white;
+        border-radius: 30px;
+        font-size: 20px;
+        text-align: left;
+        padding-left: 25px;
+    }
+
+    strong {
+        padding-left: 20px;
+
+    }
+
+    .s {
+        margin-top: 100px;
+        padding-top: 20px;
+        padding-bottom: 150px;
+    }
+
+    .ammai {
+        margin-top: 10px;
+    }
+
+    .down {
+        background-color: black;
+        color: white;
+        flex-wrap: wrap;
+    }
+
+    .img {
+        width: 280px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    #head {
+        text-align: center;
+        width: 100%;
+        font-size: 50px;
+        padding-top: 50px;
+    }
+
+    .det {
+        font-size: 30px;
+        color: white;
+        text-align: center;
+        margin-top: 10px;
+        padding-bottom: 20px;
+    }
+
+    .rap {
+        width: 100px;
+        border-radius: 10px;
+        padding-bottom: 10px;
+    }
+
+    .icons {
+        padding: 20px;
+    }
+
+    #h1 {
+        margin-top: 50px;
+    }
+
+    .end {
+        margin-top: 30px;
+        padding-left: 120px;
+        margin-bottom: 10px;
+        flex-wrap: wrap;
+    }
+
+    .details {
+        padding-left: 120px;
+    }
+
+    td {
+        font-size: 23px;
+        font-weight: 400;
+        flex-wrap: wrap;
+    }
+
+    .footer {
+        margin-top: 50px;
+        text-align: center;
+        padding: 5px;
+        color: rgb(128, 128, 128);
+    }
+</style>
+</head>
+
+<body>
+
+    <header>
+        <img src="data:image/png;base64,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"
+            alt="error" class="logo">
+        <ul>
+            <a href="" class="line">
+                <li class="lis">About Us</li>
+            </a>
+            <a href="" class="line">
+                <li class="lis">Safety</li>
+            </a>
+            <a href="" class="line">
+                <li class="lis">Blog</li>
+            </a>
+            <a href="" class="line">
+                <li class="lis">Contact Us</li>
+
+            </a>
+        </ul>
+    </header>
+
+    <div id="first">
+        <div id="sec">
+            <h1 id="bharat"> Bharat Moves On Rapido!</h1>
+        </div>
+        <div id="third">
+            <div class="input">
+
+                <input type="loction" placeholder="Enetr Pickup Location">
+            </div>
+            <div class="input">
+
+                <input type="location" placeholder="Enter Drop Location">
+            </div>
+            <input type="submit" id="btn" value="Book Ride">
+        </div>
+
+    </div>
+
+    <div id="total">
+        <div id="body">
+            <div id="our">
+                <h2>Our Services</h2>
+                <div class="under"></div>
+            </div>
+
+            <div id="images">
+                <div class="img1"><img
+                        src="https://rapido-app-assets-staging.storage.googleapis.com/c9bf4e04eeb9f9e5a52c55a143d095c5_1738146120477.webp"
+                        alt="">
+                    <p class="name">Bike</p>
+                </div>
+                <div class="img1"> <img
+                        src="https://rapido-app-assets-staging.storage.googleapis.com/baa331808b70d22c33bdcb6e96c3a104_1738146204279.webp"
+                        alt="">
+                    <p class="name">Auto</p>
+                </div>
+                <div class="img1"> <img
+                        src="https://rapido-app-assets-staging.storage.googleapis.com/1075eff8297f3213f71cf66b5852ced5_1738146244087.webp"
+                        alt="">
+                    <p class="name">Auto Share</p>
+                </div>
+                <div class="img1"><img
+                        src="https://rapido-app-assets-staging.storage.googleapis.com/5e0eec287db4aae2e64b17b9fa04cbe0_1738146281373.webp"
+                        alt="">
+                    <p class="name">Parcel</p>
+                </div>
+                <div class="img1"><img
+                        src="https://rapido-app-assets-staging.storage.googleapis.com/dd03f189ce375502079087fa3688f981_1738146314270.webp"
+                        alt="">
+                    <p class="name">Cab Economy</p>
+                </div>
+                <div class="img1"><img
+                        src="https://rapido-app-assets-staging.storage.googleapis.com/ed7c8d4653fee97d2cd5c76f00871d72_1738146343883.webp"
+                        alt="">
+                    <p class="name">Cab Premium</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="s">
+        <div class="c">
+            <div class="cd">
+                <h2 class="get">Get Quick Rides, Low Fares</h2>
+                <div class="under"></div>
+                <p class="matter">In Rapido we ensure our customers get rides quickly at the most affordable prices.</p>
+                <button class="btn2">Book a ride <strong>→</strong></button>
+
+            </div>
+            <div class="card">
+                <img src="https://rapido-app-assets-staging.storage.googleapis.com/7bfb291ed6fd8fef3949b695f66f0441_1738146457741.webp"
+                    class="im" alt="">
+            </div>
+        </div>
+        <div id="c2" style="margin-top: 100px;">
+            <div class="c">
+                <div class="card">
+                    <img src="https://rapido-app-assets-staging.storage.googleapis.com/c1ec7791629614c8c040a2a8c68bbc79_1738146545252.webp"
+                        class="im" alt="">
+                </div>
+                <div class="cd">
+                    <h2 class="get">Flexible Hours & High Earnings</h2>
+                    <div class="under"></div>
+                    <p class="matter">Join as a Rapido captain and earn on your own terms. Driver whenever you want.</p>
+
+                    <button class="btn2">Start Earning <strong>→</strong></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="ammai">
+        <div class="c">
+            <div class="cd">
+                <h2 class="get">Safety for all</h2>
+                <div class="under"></div>
+                <p class="matter">At Rapido, your safety is our priority. We’re dedicated to making every ride safe and
+                    comfortable.</p>
+                <a href="" class="line" style="color: blue;">
+                    <p class="matter">Know More ></p>
+                </a>
+
+            </div>
+            <div class="card">
+                <img src="https://rapido-app-assets-staging.storage.googleapis.com/fc70552b297693e48cef580e9f9c50c3_1738574004491.webp"
+                    class="im" alt="">
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="down">
+        <h2 id="head">Download Now</h2>
+        <div class="under" style="position: absolute; left: 48%;"></div>
+        <div class="c">
+            <div class="img">
+                <img src="https://rapido-app-assets.storage.googleapis.com/5c6ff9a6070679cf24dbf94c5b78fbbc_1743499170110.svg"
+                    class="rap" alt="error">
+                <a href="" class="det line">Rapido: Bike-Taxi, Auto & Cabs</a>
+            </div>
+            <div class="img">
+                <img src="https://rapido-app-assets-staging.storage.googleapis.com/d261bc5886ba0e8d96fe1257004bbfb7_1738146890759.webp"
+                    class=" rap" alt="error">
+                <a href="" class="det line">Rapido Captain: Drive & Earn</a>
+            </div>
+        </div>
+
+    </div>
+
+    <hr id="h1">
+    <div class="c">
+        <div class="icons">
+            <a href=""> <img
+                    src="https://rapido-app-assets.storage.googleapis.com/accad5713b1c3eea6c5fe812ae1b411c_1737391637497.svg"
+                    alt=""></a>
+            <a href=""> <img
+                    src="https://rapido-app-assets.storage.googleapis.com/0a78fb804f5a18beb78abbf9380ee332_1737391634474.svg"
+                    alt=""></a>
+            <a href=""> <img
+                    src="https://rapido-app-assets.storage.googleapis.com/d132b2d8ca47e2802f3fbcfc554d77db_1737391638642.svg"
+                    alt=""></a>
+        </div>
+    </div>
+    <hr>
+    
+    <div id="final">
+        <div class="end">
+            <img class="logo"
+                src="data:image/png;base64,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"
+                alt="">
+        </div>
+        <div class="details">
+            <table cellpadding="10px">
+                <tr>
+                    <td> <a href="" class="line">Home</a></td>
+                    <td> <a href="" class="line">Customer Terms - Bike Taxi</a></td>
+                </tr>
+                <tr>
+                    <td> <a href="" class="line">About Us</a></td>
+                    <td> <a href="" class="line">Customer Terms - Cabs and Auto</a></td>
+                </tr>
+                <tr>
+                    <td><a href="" class="line">Careers</a></td>
+                    <td><a href="" class="line">Corporate Affairs</a></td>
+                </tr>
+                <tr>
+                    <td><a href="" class="line">Safety</a></td>
+                    <td><a href="" class="line">Captain Terms- Bike Taxi</a></td>
+                </tr>
+                <tr>
+                    <td><a href="" class="line">Blog</a></td>
+                    <td><a href="" class="line">Captain Terms - cabs and Auto</a></td>
+                </tr>
+                <tr>
+                    <td><a href="" class="line">Press</a></td>
+                    <td></td>
+                </tr>
+
+                <td><a href="" class="line">Privacy Policy</a></td>
+                <td></td>
+                </tr>
+            </table>
+
+        </div>
+    </div>
+
+    <div class="footer">
+        <hr>
+        <p style="padding: 10px;"><strong>©</strong> 2025 Rapido Transportation. All rights reserved. </p>
+    </div>
+    <i class="fa-2x fa-brands fa-whatsapp "></i> <br><br> <br>
+</body>
+
+</html>
